@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Temperature Converter</h1>
+        <img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Temperature_range_pln6jc.jpg" alt="thermometer" id="tool">
+        <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/9_grande.png?v=1571606116" alt="coldemoji" class="hidden" id="cold">
+        <img src="https://images.emojiterra.com/google/android-oreo/512px/1f308.png" alt="rainbow" id="good" class="hidden">
+        <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/The_Sun_Emoji_grande.png?v=1571606063" alt="sun" id="warm" class="hidden">
+        <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/8_grande.png?v=1571606116" alt="hot" id="hot" class="hidden">
+        <img src="https://images.emojiterra.com/google/android-11/512px/1f525.png" alt="fire" id="hell" class="hidden">
+        <form>
+            <label for="temp">Convert</label>                <input type="text" id="temp" autocomplete="off" placeholder="Enter Temperature">
+            <select name="unitOne" id="unitOne">
+                <option value="fahrenheit" selected>°F</option>
+                <option value="celsius">°C</option>
+                <option value="kelvin">K</option>
+                <option value="rankine">°Ra</option>
+                <option value="reaumur">°Re</option>
+            </select>
+            <label for="UnitTwo">To</label>
+            <select name="unitOne" id="unitTwo">
+                <option value="fahrenheit" selected>°F</option>
+                <option value="celsius">°C</option>
+                <option value="kelvin">K</option>
+                <option value="rankine">°Ra</option>
+                <option value="reaumur">°Re</option>
+            </select>
+        </form>
+
+        <button id="convert">Convert</button>
+
+        <h2 id="newTemp"></h2>
+
+        <script src="script.js"></script>
+    </body>
+</html>
